@@ -6,7 +6,7 @@ const postData = [
     {
         id: 1,
         title: 'this is title 1',
-        contents: 'The nose of the wine offers aromas of black cherry and blackberry along with underlying floral nuances. The texture is soft, yet the wine maintains wonderful structure. This is a versatile wine that will accompany a wide array of dishes.',
+        contents: 'Wonderful win: The aromas of black cherry and blackberry are awesome. The texture is soft, yet the wine maintains wonderful structure. This is a versatile wine that will accompany a wide array of dishes.',
         created_at: new Date(),
     },
     {
