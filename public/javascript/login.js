@@ -19,6 +19,7 @@ async function signupFormHandler(event) {
         // check the response status
         if (response.ok) {
             console.log('success');
+            document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
         }
@@ -34,8 +35,8 @@ async function loginFormHandler(event) {
     const password = document.querySelector('#password-login').value.trim();
 
     if (email && password) {
-        console.log(email);
-        console.log(password);
+        // console.log(email);
+        // console.log(password);
         const response = await fetch('/api/users/login', {
             method: 'post',
             body: JSON.stringify({
@@ -46,7 +47,7 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/');
+            document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
         }

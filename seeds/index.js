@@ -12,7 +12,7 @@ const seedAll = async () => {
   await seedUsers();
   console.log('\n----- USERS SYNCED -----\n');
   await seedComments();
-  console.log('\n----- REPLIES SYNCED -----\n');
+  console.log('\n----- COMMENTS SYNCED -----\n');
 
   process.exit(0);
 };
